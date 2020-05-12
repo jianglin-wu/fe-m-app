@@ -22,7 +22,8 @@ import './index.less'
 }))
 class Index extends Component {
 
-    config = {
+  // eslint-disable-next-line react/sort-comp
+  config = {
     navigationBarTitleText: '首页'
   }
 

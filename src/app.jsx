@@ -1,5 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/redux'
+import "taro-ui/dist/style/index.scss";
 
 import Index from './pages/index'
 
@@ -18,8 +19,10 @@ const store = configStore()
 class App extends Component {
 
   config = {
+    sitemapLocation: "sitemap.json",
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/index/test',
     ],
     window: {
       backgroundTextStyle: 'light',
